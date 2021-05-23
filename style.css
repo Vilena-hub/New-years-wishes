@@ -1,0 +1,149 @@
+*, :after, :before { box-sizing: border-box; }
+
+body {
+  background: url("sashi/bg_codemas.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Playfair Display', serif;
+
+  /*vyresetování odsazení stránky*/
+  margin: 0;
+}
+
+h1{
+  font-family: 'Dancing Script';
+  text-align: center;
+  color: white;
+  font-size: 76px;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.prani {
+    background-color: white;
+}
+.prani-text-osloveni, .prani-text-podpis {
+    padding: 10% 0;
+    font-size: 30px;
+    color:#700C25;
+    display: block;
+    font-family: 'Dancing Script';
+}
+
+.prani-text-podpis {
+    text-align: right;
+}
+.prani-text {
+    margin: 0 10%;
+    text-align: justify;
+}
+
+.pristi-rok {
+    color: white;
+    background-color: #700C25;
+    padding-bottom: 10%;
+}
+.pristi-rok-text-nadpis {
+    padding: 10% 0;
+    font-size: 30px;
+    display: block;
+    font-family: 'Dancing Script', cursive;
+}
+.pristi-rok-text {
+    margin: 10%;
+    text-align: justify;
+}
+.pristi-rok-todo {
+    margin: 0 10%;
+}
+.pristi-rok-todo-polozka {
+    padding: 5%;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Dancing Script';
+}
+.foto {
+    position: relative;
+    display: block;
+}
+.popisek {
+    margin: 5% 0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+@media screen and (min-width: 950px) {
+    body {
+        padding: 0 20%;
+    }
+    .prani {
+  display: flex;
+}
+ 
+.prani img {
+  width: 50%;
+}
+ 
+.prani-text {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pristi-rok {
+        display: flex;
+        padding-bottom: 0;
+    }
+
+    .pristi-rok-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 5%;
+}
+
+    .pristi-rok-todo {
+        flex-basis: 50%;
+        margin: 0 5%;
+    }
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+.foto {
+      width: 33.333333%;
+      height: 200px;
+      overflow: hidden;
+    }
+.foto .popisek {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+ 
+.foto img {
+    transition: 0.3s;
+}
+ 
+.foto:hover img {
+    transform: scale(1.15);
+}
+ 
+.foto:hover .popisek {
+    transform: translateY(0);
+}
